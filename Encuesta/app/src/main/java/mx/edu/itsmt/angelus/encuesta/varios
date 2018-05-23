@@ -1,0 +1,51 @@
+ public void cargarBD() {
+    long a=0,b=0,c=0;
+    long d=0,e=0,f=0,g=0,h=0;
+        operacion.open();
+         a=operacion.insertarTipoPregunta(1,"Psicologica");
+        System.out.println("A:"+a);
+       if(a>0){
+            Toast.makeText(getApplicationContext(),"Registro A Insertado",Toast.LENGTH_LONG).show();
+            b= operacion.insertarTipoPregunta(2,"Fisica");
+           System.out.println("B:"+b);
+            if(b>0){
+                Toast.makeText(getApplicationContext(),"Registro B Insertado",Toast.LENGTH_LONG).show();
+                c= operacion.insertarTipoPregunta(3,"Sexual");
+                System.out.println("C:"+c);
+                Toast.makeText(getApplicationContext(),"Registro B Insertado",Toast.LENGTH_LONG).show();
+            }
+       }
+        else{
+            Toast.makeText(getApplicationContext(),"Registro No Insertado",Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(),""+a,Toast.LENGTH_LONG).show();
+        }
+        operacion.close();
+       operacion.open();
+      d=operacion.insertarPregunta(1, "¿Le controla la mayor parte de su tiempo, actividades y dinero?", 10, 1);
+      if(d!=0){
+          e=operacion.insertarPregunta(1, "¿Usted siente que su pareja no le pone atención que la menosprecia o humilla?", 10, 1);
+           if(e!=0)
+           f=operacion.insertarPregunta(1, "¿La ha amenazado con golpearla o llevarse a sus hijos?", 10, 1);
+          if(f!=0)
+              g=operacion.insertarPregunta(1, "¿Le dice que se va a ir de la casa cuando se enoja?", 10, 1);
+          if(g!=0) {
+              h = operacion.insertarPregunta(1, "¿Usted piensa que en su casa las cosas no van bien por su culpa?", 10, 1);
+              Log.d("Registro","Insertado");
+          }
+      }
+        Log.d("Registro","NoInsertado");
+
+
+
+
+        operacion.close();
+   }
+
+   -------------------------------
+/*     lista = new ArrayList<Pregunta>();
+       lista.add(new Pregunta(1,"Primer Listview",R.drawable.fisica));
+        lista.add(new Pregunta(2,"segundo Listview",R.drawable.psicologica));
+        lista.add(new Pregunta(3,"tercero Listview",R.drawable.sexual));
+        Adaptador adaptador = new Adaptador(getApplicationContext(),lista);
+        datos.setAdapter(adaptador);
+   */

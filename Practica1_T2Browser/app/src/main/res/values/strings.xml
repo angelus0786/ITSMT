@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Practica1_T2Browser</string>
+    <string name="title_activity_2">Activity2</string>
+    <string name="editText1">Ingresa sitio web</string>
+    <string name="button">Buscar</string>
+    <string name="btFinalizar">Finalizar</string>
+</resources>

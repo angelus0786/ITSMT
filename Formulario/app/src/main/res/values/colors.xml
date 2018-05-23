@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorFormulario">#083279</color>
+    <color name="colorHint">#de38ca</color>
+    <color name="colorTexto1">#e6d21f</color>
+    <color name="colorBackground">#0b0b0b</color>
+    <color name="colorVerde">#46a73b</color>
+    <color name="colorVerdeOscuro">#116c07</color>
+</resources>
