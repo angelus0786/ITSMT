@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Tarea2</string>
+    <string name="et_registro">Registro</string>
+    <string name="et_nombre">Nombre</string>
+    <string name="et_apellidos">Apellidos</string>
+    <string name="et_correo">correo electronico</string>
+    <string name="et_genero">Genero</string>
+    <string name="et_fecha_nacimiento">Fecha de Nacimiento</string>
+    <string name="bt_enviar">Enviar</string>
+    <string name="tv_edad">Edad</string>
+</resources>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Formulario</string>
+    <string name="txtNombre">Nombre</string>
+    <string name="txtApellidos">Apellidos</string>
+    <string name="txtCorreo">Correo</string>
+    <string name="txtTelefon">Telefono</string>
+    <string name="txtFechaNacimiento">Fecha Nacimiento</string>
+    <string name="btnEnviar">Enviar</string>
+    <string name="btnConsultar">Consultar Registros</string>
+</resources>

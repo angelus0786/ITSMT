@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear1"
+    style="@style/linear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="mx.edu.itsmt.angelus.tarea2.MainActivity">
+
+    <TextView
+        android:id="@+id/et_registro"
+        style="@style/tv_titulos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/et_registro"
+        android:gravity="center"
+         />
+
+    <EditText
+        android:id="@+id/et_nombre"
+        style="@style/et_textos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/et_nombre"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/et_apellidos"
+        style="@style/et_textos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/et_apellidos" />
+
+    <EditText
+        android:id="@+id/et_correo"
+        style="@style/et_textos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="@string/et_correo"/>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_genero"
+            style="@style/tv_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/et_genero" />
+
+        <Spinner
+            android:id="@+id/sp_genero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_fecha_nac"
+        style="@style/et_textos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="date"
+        android:hint="@string/et_fecha_nacimiento"/>
+
+    <Button
+        android:id="@+id/bt_enviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boton_presionado"
+        android:onClick="enviar"
+        android:text="@string/bt_enviar" />
+
+
+</LinearLayout>
